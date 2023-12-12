@@ -1,6 +1,16 @@
 {
+  "name": "itsc-demo",
+  "version": "1.0.0",
+  "description": "ITSC Demo",
+  "author": {
+    "name": "ITSC"
+  },
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "dayjs": "^1.11.10"
+    "moment": "^2.29.4"
   }
 }
