@@ -2,6 +2,7 @@ const addButton = document.getElementById('add-btn');
 const input1 = document.querySelector('#input1');
 const input2 = document.querySelector('#input2');
 const list = document.querySelector('#list');
+const paragraph = document.querySelector('#fourth-paragraph');
 
 const add = (arg1, arg2) => Number(arg1) + Number(arg2);
 
@@ -19,6 +20,9 @@ addButton.addEventListener('click', () => {
     const result = add(input1Value, input2Value);
     const resultNarrative = `${input1Value} + ${input2Value} = ${result}`;
     console.log(resultNarrative);
+
+    paragraph.innerHTML = `${paragraph.innerHTML} ${resultNarrative} <br/>`;
+
 });
 
 
